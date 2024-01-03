@@ -15,7 +15,6 @@ let money = document.getElementById('cash')
 cash = 300
 money.textContent = `Cash : $${cash}`
 
-
 // Creating a click function for rock
 rock.addEventListener("click", () => {
     // play sound
