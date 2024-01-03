@@ -14,7 +14,10 @@ let aiImagesUrl = ['assets/rock_ai-removebg.png','assets/paper_ai-removebg.png',
 let money = document.getElementById('cash')
 cash = 300
 money.textContent = `Cash : $${cash}`
+var bgMusic = new Audio('assets/Miami (Original Mix).mp3')
 
+// play audio when browser loads
+window.onload(bgMusic.play())
 
 // Creating a click function for rock
 rock.addEventListener("click", () => {
