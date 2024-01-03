@@ -23,6 +23,11 @@ function toggleMute(){
     backgroundMusic.muted = !backgroundMusic.muted;
 }
 toggleMute();
+var bgMusic = new Audio('assets/Miami (Original Mix).mp3')
+
+// play audio when browser loads
+window.onload(bgMusic.play())
+
 // Creating a click function for rock
 rock.addEventListener("click", () => {
     // play sound
