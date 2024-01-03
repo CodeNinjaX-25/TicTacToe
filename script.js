@@ -12,9 +12,17 @@ let playerChoice = "";
 let aiChoices = ["rock", "paper", "scissors"];
 let aiImagesUrl = ['assets/rock_ai-removebg.png','assets/paper_ai-removebg.png','assets/scissors_ai-removebg.png']
 let money = document.getElementById('cash')
+let backgroundMusic = document.getElementById('bgMusic')
 cash = 300
 money.textContent = `Cash : $${cash}`
-
+// toggle mute audio
+// Chrome and other browsers does not accept autoplay audios, The audios have to be triggered by user action to play. but they do
+// accept muted autoplay. So I muted the audio in the html and unmuted it with Javascript here
+//That's the trick to bypass the autoplay chrome policy
+function toggleMute(){
+    backgroundMusic.muted = !backgroundMusic.muted;
+}
+toggleMute();
 // Creating a click function for rock
 rock.addEventListener("click", () => {
     // play sound
