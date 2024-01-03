@@ -1,0 +1,105 @@
+/*  Code written by Abraham Bishop 
+    You may reuse this code. Credits to the owner will be very much appreciated 
+    Company Name : CodeNest Solutions 
+    You can send any improved version to our email : codenestsolutions@gmail.com  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #242424;
+    font-family: 'Bungee Spice', sans-serif;
+    color: white;
+}
+.header-image{
+    height: 20%;
+}
+.header-image img{
+width: 100%;
+height: 100%;
+}
+#cash{
+    display: block;
+}
+.ai-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.ai-section img{
+    width: 40%;
+    height: auto;
+}
+.pop{
+    animation: pop 1s 0s 1;
+}
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+.ai-section p{
+    font-size: 22px;
+}
+.flash{
+    animation: flash 1s 0s infinite;
+}
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.ai-section h2{
+    font-family: 'Shadows Into Light', cursive;
+}
+.wobble{
+    animation: wobble 1s 0s infinite;
+}
+@keyframes wobble {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-10%); }
+    30% { transform: translateX(10%); }
+    45% { transform: translateX(-10%); }
+    60% { transform: translateX(10%); }
+    75% { transform: translateX(-10%); }
+    100% { transform: translateX(0%); }
+  }
+.player-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0;
+}
+.player-section img{
+    width: 80%;
+    cursor: pointer;
+    transition: all 1000ms;
+    animation: click 1s 0s infinite;
+}
+@keyframes click {
+    0% { transform: scale(1); }
+    10% { transform: scale(0.9); }
+    30% { transform: scale(1.1); }
+    50% { transform: scale(0.95); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+/* .play-section img:hover{
+    transform: translateY(-30px);
+} */
+.play-section{
+    padding: 0 15px;
+    margin: 30px 0;
+}
+.play-section p{
+    font-family: 'Shadows Into Light', cursive;
+    color: coral;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+}
